@@ -86,7 +86,7 @@ public class Assign4Test {
         String fakeInput = input + "\n";
         byte[] fakeInputArray = fakeInput.getBytes();
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        int[] expectedNum = {1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600};
+        int[] expectedNum = {1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600};
 
         String expected = Integer.toString(expectedNum[input]);
 

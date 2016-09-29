@@ -36,7 +36,7 @@ public class Assign4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String[] questions = {
-            "1. Sum of Numbers",
+            "1. Factorial",
             "2. Distance Traveled File",
             "3. Largest and Smallest",
             "4. Celsius and Fahrenheit Table",
