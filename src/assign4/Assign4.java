@@ -21,6 +21,7 @@
  */
 package assign4;
 
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -33,7 +34,7 @@ public class Assign4 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner input = new Scanner(System.in);
         String[] questions = {
             "1. Factorial",
