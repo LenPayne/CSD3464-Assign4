@@ -81,7 +81,7 @@ public class Assign4 {
     }
 
     /*
-     * Exercise #1 - Factorial
+     * Exercise #1 - Sum of All Numbers
      *
      * Write a program that asks the user for a positive nonzero integer 
      * value less than 1000. The program should use a loop to find the sum of 
