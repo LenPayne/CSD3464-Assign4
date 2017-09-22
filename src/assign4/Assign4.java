@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-/* The following exercises are adapted from:
+ /* The following exercises are adapted from:
  * Gaddis, T. (2013). Starting Out with Java: From Control Structures through 
  * Objects. (5th ed.). Upper Saddle River, NJ: Pearson Education.
  * ISBN: 978-0-13-285583-9
  */
 package assign4;
 
+import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -33,7 +34,7 @@ public class Assign4 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Scanner input = new Scanner(System.in);
         String[] questions = {
             "1. Factorial",
@@ -83,16 +84,16 @@ public class Assign4 {
      * Exercise #1 - Factorial
      *
      * Write a program that asks the user for a positive nonzero integer 
-     * value less than 13. The program should use a loop to find the product of 
-     * multiplying the integers from 1 up to the number entered. For example, if 
-     * the user enters 9, the loop will find the product of 1 x 2 x 3 x ... 9.
+     * value less than 1000. The program should use a loop to find the sum of 
+     * adding the integers from 1 up to the number entered. For example, if 
+     * the user enters 90, the loop will find the sum of 1 + 2 + 3 + ... + 89 + 90.
      *
      * Sample Output:
      * ==============
      * 
-     *   Enter a positive, nonzero integer value less than 13:
-     *   9
-     *   The factorial of 9! is 362880.
+     *   Enter a positive, nonzero integer value less than 1000:
+     *   90
+     *   The sum of integers up to 90 is 4095.
      */
     public static void doExercise1() {
         // TODO: Complete Exercise 1 Below

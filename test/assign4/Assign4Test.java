@@ -62,12 +62,12 @@ public class Assign4Test {
      * Test of doExercise1 method, of class Assign4.
      */
     @Test
-    public void testDoExercise1ForEleven() {
-        String fakeInput = "11\n";
+    public void testDoExercise1For415() {
+        String fakeInput = "415\n";
         byte[] fakeInputArray = fakeInput.getBytes();
         System.setIn(new ByteArrayInputStream(fakeInputArray));
 
-        String expected = "39916800";
+        String expected = "86320";
 
         Assign4.doExercise1();
 
@@ -82,13 +82,12 @@ public class Assign4Test {
     @Test
     public void testDoExercise1ForRandom() {
         Random rng = new Random();
-        int input = rng.nextInt(12) + 1;
+        int input = rng.nextInt(1000) + 1;
         String fakeInput = input + "\n";
         byte[] fakeInputArray = fakeInput.getBytes();
         System.setIn(new ByteArrayInputStream(fakeInputArray));
-        int[] expectedNum = {1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600};
-
-        String expected = Integer.toString(expectedNum[input]);
+        
+        String expected = Integer.toString(input * (input + 1) / 2);
 
         Assign4.doExercise1();
 
